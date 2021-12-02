@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 8.5rem;
+  background-color: red;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3.56em;
+  padding-right: 3.56em;
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  column-gap: 0.1875rem;
+  align-items: baseline;
+}
+
+.logo img {
+  align-self: center;
+}
+
+.logo span {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.logo p {
+  font-size: 1.06rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 0.1875rem;
+  padding-bottom: 0.25rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.links a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.06rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-left: 6.23rem;
+  margin-top: 0.1rem;
+}
+
+.links a span {
+  font-size: 1.06rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  margin-right: -0.61rem;
+}
+
+button {
+  background: #000000;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #ffffff;
+  height: 3.44rem;
+  width: 14.69rem;
+  margin-top: 0.25rem;
+  margin-left: 6rem;
+}
+
+button p {
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  margin-top: 2.0625rem;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 4.81rem;
+  line-height: 111%;
+  letter-spacing: -0.02em;
+  margin-top: -11.235rem;
+  margin-left: -15.77rem;
+  width: 100%;
+}
