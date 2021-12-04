@@ -113,13 +113,13 @@ button p {
   top: -10px;
 }
 
-/* .phone img {
+.phone img {
   transition: transform 1s ease;
 }
 
 .phone img:hover {
-  transform: rotateY(25deg) scale(1.01);
-} */
+  transform: rotateY(20deg) scale(1.08);
+}
 
 .hero-text {
   position: relative;
@@ -244,15 +244,21 @@ button p {
   text-align: center;
 }
 .footer-links {
-  margin-top: 3.5rem;
+  margin-top: 3.53rem;
+  margin-left: 2.1rem;
+  margin-right: 0.3rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1rem;
   line-height: 187%;
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  align-self: center;
+  /* width: 26.25rem; */
+  left: 32.81rem;
+  right: 30.9375rem;
 }
 
 .footer-links a {
@@ -261,14 +267,18 @@ button p {
   text-align: center;
 }
 
-.vertical-line-1 {
-  color: #ffffff;
-  text-align: center;
-}
-
 .vertical-line {
   color: #ffffff;
   text-align: center;
+  margin-right: 0.549rem;
+  margin-left: 0.6rem;
+}
+
+.vertical-line-1 {
+  color: #ffffff;
+  text-align: center;
+  margin-right: 0.6rem;
+  margin-left: 0.27rem;
 }
 
 .wordpay {
@@ -292,7 +302,7 @@ button p {
 }
 
 .big-line {
-  margin-top: 0.65rem;
+  margin-top: 0.635rem;
   border: 1px solid #828282;
   background-color: #828282;
   height: 0;
@@ -310,7 +320,7 @@ button p {
 
 .left-links {
   margin-left: 1.5rem;
-  margin-top: 0.68rem;
+  margin-top: 0.7rem;
   font-size: 0.88rem;
   line-height: 1.88rem;
   display: flex;
@@ -324,7 +334,7 @@ button p {
 
 .right-link {
   margin-right: 1.53rem;
-  margin-top: 0.7rem;
+  margin-top: 0.77rem;
   font-size: 0.88rem;
   line-height: 1.88rem;
 }
