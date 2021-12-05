@@ -103,6 +103,18 @@ button p {
   width: 100%;
 }
 
+/* ANIMATION OD HERO PHONE */
+.phone img:hover {
+  animation: rotate-verticaly 3s ease-in-out;
+}
+@keyframes rotate-verticaly {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
 .phone img {
   position: relative;
   top: 0;
@@ -113,13 +125,13 @@ button p {
   top: -10px;
 }
 
-.phone img {
+/* .phone img {
   transition: transform 1s ease;
 }
 
 .phone img:hover {
   transform: rotateY(20deg) scale(1.08);
-}
+} */
 
 .hero-text {
   position: relative;
@@ -214,6 +226,27 @@ button p {
   align-items: center;
 }
 
+.test-paywall {
+  /* overflow-y: scroll; */
+  height: 14.25rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  position: relative;
+}
+
+/* .test-paywall::-webkit-scrollbar {
+  width: 7px;
+}
+
+.test-paywall::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+.test-paywall::-webkit-scrollbar-thumb {
+  background: #00000086;
+  border-radius: 5px;
+} */
+
 .dubble-line {
   margin-bottom: 0.625rem;
 }
@@ -266,11 +299,47 @@ button p {
 }
 
 .test-message {
-  margin-top: 1.64rem;
+  margin-top: -0.5rem;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   row-gap: 0.3125rem;
+  /* background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(255, 255, 255, 0) 100%
+  ); */
+  /* box-shadow: -2px -11px 9px -1px rgba(153, 151, 151, 0.59);
+  -webkit-box-shadow: -2px -11px 9px -1px rgba(153, 151, 151, 0.59);
+  -moz-box-shadow: -2px -11px 9px -1px rgba(153, 151, 151, 0.59); */
+  background-color: transparent;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 12rem;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.box hr {
+  width: 50%;
+  margin: 0.2rem 0;
 }
 
 .line-one {
@@ -295,7 +364,7 @@ button p {
 }
 
 .buttons {
-  margin-top: 1.23rem;
+  margin-top: 2.18rem;
   margin-left: 2.75rem;
   width: 17.31rem;
   height: 6.38rem;
