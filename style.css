@@ -26,11 +26,22 @@ body {
   align-items: baseline;
 }
 
+a {
+  text-decoration: none;
+}
+
+a .logo {
+  text-decoration: none;
+  color: #000000;
+}
+
 .logo img {
+  text-decoration: none;
   align-self: center;
 }
 
 .logo span {
+  text-decoration: none;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: bold;
@@ -39,6 +50,7 @@ body {
 }
 
 .logo p {
+  text-decoration: none;
   font-size: 1.06rem;
   font-weight: 500;
   line-height: 1.5rem;
@@ -63,8 +75,13 @@ body {
   font-size: 1.06rem;
   font-weight: 500;
   line-height: 1.5rem;
-  margin-left: 6.23rem;
   margin-top: 0.1rem;
+}
+
+.links-mid {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 6.23rem;
 }
 
 .links a span {
@@ -75,6 +92,7 @@ body {
 }
 
 button {
+  cursor: pointer;
   background: #000000;
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -86,7 +104,7 @@ button {
   margin-left: 6rem;
 }
 
-button p {
+a button {
   font-family: "Poppins";
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -124,14 +142,6 @@ button p {
 .phone img:hover {
   top: -10px;
 }
-
-/* .phone img {
-  transition: transform 1s ease;
-}
-
-.phone img:hover {
-  transform: rotateY(20deg) scale(1.08);
-} */
 
 .hero-text {
   position: relative;
@@ -227,25 +237,11 @@ button p {
 }
 
 .test-paywall {
-  /* overflow-y: scroll; */
   height: 14.25rem;
   margin-left: 2rem;
   margin-right: 2rem;
   position: relative;
 }
-
-/* .test-paywall::-webkit-scrollbar {
-  width: 7px;
-}
-
-.test-paywall::-webkit-scrollbar-track {
-  border-radius: 5px;
-}
-
-.test-paywall::-webkit-scrollbar-thumb {
-  background: #00000086;
-  border-radius: 5px;
-} */
 
 .dubble-line {
   margin-bottom: 0.625rem;
@@ -305,26 +301,20 @@ button p {
   flex-direction: column;
   justify-content: flex-start;
   row-gap: 0.3125rem;
-  /* background-image: linear-gradient(
-    to top,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 30%,
-    rgba(255, 255, 255, 0) 100%
-  ); */
-  /* box-shadow: -2px -11px 9px -1px rgba(153, 151, 151, 0.59);
-  -webkit-box-shadow: -2px -11px 9px -1px rgba(153, 151, 151, 0.59);
-  -moz-box-shadow: -2px -11px 9px -1px rgba(153, 151, 151, 0.59); */
   background-color: transparent;
 }
 
 .box {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
   content: "";
-  position: absolute;
-  bottom: -1rem;
+  position: relative;
+  bottom: 8.5rem;
   left: 0;
   right: 0;
   width: 100%;
@@ -340,6 +330,40 @@ button p {
 .box hr {
   width: 50%;
   margin: 0.2rem 0;
+}
+
+.box:hover #upper-line {
+  bottom: 2.1rem;
+  position: absolute;
+  -webkit-animation: linear;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 1.5s;
+}
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  100% {
+    left: 35%;
+    opacity: 1;
+  }
+}
+.box:hover #lower-line {
+  position: relative;
+  -webkit-animation: linear;
+  -webkit-animation-name: run1;
+  -webkit-animation-duration: 1.5s;
+}
+@-webkit-keyframes run1 {
+  0% {
+    right: -100px;
+    opacity: 0;
+  }
+  100% {
+    right: 1%;
+    opacity: 1;
+  }
 }
 
 .line-one {
@@ -364,7 +388,7 @@ button p {
 }
 
 .buttons {
-  margin-top: 2.18rem;
+  margin-top: 2.15rem;
   margin-left: 2.75rem;
   width: 17.31rem;
   height: 6.38rem;
@@ -376,9 +400,10 @@ button p {
 }
 
 .lower-button {
+  text-decoration: none;
   cursor: pointer;
   width: 17.31rem;
-  height: 3rem;
+  height: 2.8rem;
   border-radius: 0.31rem;
   font-family: "Poppins";
   font-weight: 500;
@@ -420,6 +445,7 @@ button p {
 }
 
 .footer-links a {
+  cursor: pointer;
   text-decoration: none;
   color: #ffffff;
   text-align: center;
