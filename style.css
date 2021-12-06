@@ -672,7 +672,6 @@ label {
     height: 0.35rem;
     border-radius: 0.3rem;
     margin-bottom: 0.15rem;
-    z-index: 1;
   }
 
   label {
@@ -684,7 +683,7 @@ label {
     text-align: center;
     width: 100%;
     display: none;
-    margin-bottom: -12rem;
+    margin-bottom: -12.9rem;
   }
 
   .menu a {
@@ -693,6 +692,7 @@ label {
     text-align: center;
     width: 130%;
     padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
     color: #000000;
     margin-left: -3rem;
   }
