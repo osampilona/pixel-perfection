@@ -564,6 +564,7 @@ label {
     cursor: pointer;
     text-align: right;
     align-items: flex-end;
+    width: 100%;
   }
   .hamburger .line {
     background-color: #000000;
@@ -583,16 +584,28 @@ label {
     text-align: center;
     width: 100%;
     display: none;
+    margin-bottom: -12rem;
   }
 
   .menu a {
     display: block;
     border-bottom: 1px solid #828282;
-    margin: 0;
+    /* margin: 0; */
+    height: 3rem;
+    text-align: center;
+    width: 130%;
+    padding-top: 0.8rem;
+    color: #000000;
+    margin-left: -12rem;
+    z-index: 2;
   }
 
   #toggle:checked + .menu {
     display: block;
+  }
+
+  .menu a span {
+    font-weight: bold;
   }
 
   /* HERO */
@@ -651,6 +664,7 @@ label {
     cursor: pointer;
     text-align: right;
     align-items: flex-end;
+    width: 100%;
   }
   .hamburger .line {
     background-color: #000000;
@@ -670,16 +684,29 @@ label {
     text-align: center;
     width: 100%;
     display: none;
+    margin-bottom: -12rem;
   }
 
   .menu a {
     display: block;
     border-bottom: 1px solid #828282;
-    margin: 0;
+    height: 3rem;
+    text-align: center;
+    width: 130%;
+    padding-top: 0.8rem;
+    color: #000000;
+    margin-left: -3rem;
   }
 
   #toggle:checked + .menu {
     display: block;
+    z-index: 2;
+    background-color: #ffffff;
+    width: 210%;
+  }
+
+  .menu a span {
+    font-weight: bold;
   }
 
   /* HERO */
